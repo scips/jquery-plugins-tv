@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Scrollable test</title>
+		<link rel="stylesheet" href="css/reset.css"></link>
+		<link rel="stylesheet" href="css/style.css"></link>
+		<style>
+			#scrollableElem1 .scrollable {height: 100px;}
+			.disabled {color: #CCC;}
+			.highlighted {color: #00C;}
+		</style>
+	</head>
+	<body>
+		<h1>Jquery Scrollable implementation</h1>
+		<h2>Simple with arrow keys and clickable element</h2>
+		<div id="scrollableElem1">
+			<p><a href="#">Key press handler</a> <em> <-- (use tab to reach this part, then press UP or DOWN arrow keys)</em></p>
+			<p class="prev">Up</p>
+			<p class="next">Down</p>
+			<div class="scrollable">
+				<ul>
+				</ul>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+		<script type="text/javascript" src="libs/jquery.scrollable.js"></script>
+		<script>
+		// populate the list
+		for(i=1;i<=32;i++){
+			$("#scrollableElem1>.scrollable>ul").append("<li>Elem "+i+"</li>");
+		}
+		</script>
+		<script type="text/javascript">
+		var $scroll1 = $("#scrollableElem1");
+		// make scroll1 scrollable
+		$scroll1.scrollable({debug:false, scrollstep:100});
+		// add next/previous on click next/prev
+		$scroll1.find("a:first").keyup(function(e){
+			e.preventDefault();
+			switch(e.which){
+				// key down
+				case 40:
+					$scroll1.data('scrollable').scrollDown();
+					break;
+				// key up
+				case 38:
+					$scroll1.data('scrollable').scrollUp();
+					break;
+			}
+		});
+		// add onclick feature too
+		// by using function pointer
+		$scroll1.find(".prev").click($scroll1.data('scrollable').scrollUp);
+		// by calling an anonymous function
+		$scroll1.find(".next").click(function() {$scroll1.data('scrollable').scrollDown();});
+		</script>
+	</body>
+</html>

@@ -5,7 +5,7 @@
 		var elem = $(element);
 		var obj = this;
 		
-		var defaultSettings = {next: '.next',prev: '.prev',scrollable: '.scrollable',scrollstep: 200, debug: false};
+		var defaultSettings = {next: '.next',prev: '.prev',scrollable: '.scrollable',scrollstep: 200, debug: false, disabled: 'disabled', highlighted: 'highlighted'};
 		var opts =  $.extend(defaultSettings, options || {});
 		
 		var nextButton = elem.find(opts.next);
@@ -28,7 +28,7 @@
 		scrollableZone.css("zoom","1");
 		
 		// prepare arrows
-		previousButton.addClass("disabled");
+		previousButton.addClass(opts.disabled);
 		
 		// mesure positions
 		topBase = parseInt(scrollDiv.css('top'));
@@ -48,12 +48,12 @@
 				if(top-scrollStep<=Boundary2){
 					step = -(Boundary2-top);
 					// disable button
-					nextButton.addClass("disabled");
+					nextButton.addClass(opts.disabled);
 				}
-				nextButton.addClass("highlighted");
+				nextButton.addClass(opts.highlighted);
 				scrollDiv.stop().animate({top:'-='+step},{complete:function(){
-					previousButton.removeClass("disabled");
-					nextButton.removeClass("highlighted");
+					previousButton.removeClass(opts.disabled);
+					nextButton.removeClass(opts.highlighted);
 					top = parseInt(scrollDiv.css('top'));
 					if(opts.debug) {console.log('next-after top: '+top+' boundary 1: '+Boundary1 + ' boundary 2: ' + Boundary2);}
 				}});
@@ -68,12 +68,12 @@
 				if(top+scrollStep>=Boundary1){
 					step = -(top-Boundary1);
 					// disable button
-					previousButton.addClass("disabled");
+					previousButton.addClass(opts.disabled);
 				}
-				previousButton.addClass("highlighted");
+				previousButton.addClass(opts.highlighted);
 				scrollDiv.stop().animate({top:'+='+step},{complete:function(){
-					nextButton.removeClass("disabled");
-					previousButton.removeClass("highlighted");
+					nextButton.removeClass(opts.disabled);
+					previousButton.removeClass(opts.highlighted);
 					top = parseInt(scrollDiv.css('top'));
 					if(opts.debug) {console.log('previous-after top: '+top+' boundary 1: '+Boundary1 + ' boundary 2: ' + Boundary2);}
 				}});
@@ -92,9 +92,5 @@
 			element.data('scrollable', myplugin);
       });
 	};
-	
-	$(".scrollableElements").scrollable({debug:false});
-	$(".scrollableElements").data('scrollable').scrollDown();
-	$(".scrollableElements").data('scrollable').scrollUp();
 	
 })(jQuery);

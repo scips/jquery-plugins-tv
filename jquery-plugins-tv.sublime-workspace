@@ -1,0 +1,215 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"scr",
+				"scrollableElem1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<html>\n	<head>\n		<title>Scrollable test</title>\n		<style>\n			#scrollableElem1 .scrollable {height: 100px;}\n		</style>\n	</head>\n	<body>\n		<h1>Jquery Scrollable implementation</h1>\n		<h2>Simple with arrows</h2>\n		<div id=\"scrollableElem1\">\n			<p class=\"prev\">Up</p>\n			<p class=\"next\">Down</p>\n			<div class=\"scrollable\">\n				<ul>\n					<li>Elem 1</li>\n					<li>Elem 2</li>\n					<li>Elem 3</li>\n					<li>Elem 4</li>\n					<li>Elem 5</li>\n					<li>Elem 6</li>\n					<li>Elem 7</li>\n					<li>Elem 8</li>\n					<li>Elem 9</li>\n					<li>Elem 10</li>\n					<li>Elem 11</li>\n					<li>Elem 12</li>\n					<li>Elem 13</li>\n					<li>Elem 14</li>\n					<li>Elem 15</li>\n					<li>Elem 16</li>\n					<li>Elem 17</li>\n					<li>Elem 18</li>\n					<li>Elem 19</li>\n					<li>Elem 20</li>\n					<li>Elem 21</li>\n					<li>Elem 22</li>\n					<li>Elem 23</li>\n					<li>Elem 24</li>\n					<li>Elem 25</li>\n					<li>Elem 26</li>\n					<li>Elem 27</li>\n					<li>Elem 28</li>\n					<li>Elem 29</li>\n					<li>Elem 30</li>\n					<li>Elem 31</li>\n					<li>Elem 32</li>\n				</ul>\n			</div>\n		</div>\n		<script type=\"text/javascript\" src=\"libs/\"></script>\n	</body>\n</html>",
+			"file": "scrollable.html",
+			"file_size": 1069,
+			"file_write_time": 1343049586000000,
+			"settings":
+			{
+				"buffer_size": 1124,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/scips/GitHub/jquery-plugins-tv/lib/jquery.scrollable.js",
+		"/home/scips/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"auto"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scrollable.html",
+					"settings":
+					{
+						"buffer_size": 1124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1124,
+								1124
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 297.0,
+	"status_bar_visible": true
+}
