@@ -3,6 +3,8 @@ jquery-plugins-tv
 
 A set of jQuery plugins with methods callable from anywhere (not mouse/touch dependent)
 
+# Scrollable
+
 ## Getting Started
 
 ```html
@@ -28,3 +30,12 @@ A set of jQuery plugins with methods callable from anywhere (not mouse/touch dep
 	$(".scrollableElements").data('scrollable').scrollUp();
 </script>
 ```
+## Parameters
+
+* **debug**: boolean // *display console message*
+* **next**: string // *css class to select the 'next' arrow default: '.next'*
+* **prev**: string // *css class to select the 'prev' arrow default: '.prev'*
+* **scrollable**: string // *css class to select the part that will actually scroll default: '.scrollable'*
+* **scrollStep**: integer // *number of pixel to scroll at a time*
+* **disabled**: string // *disabled css class default: 'disabled'*
+* **highlighted**: string // *highlighted class default: 'highlighted'*
